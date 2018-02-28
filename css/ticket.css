@@ -22,7 +22,7 @@ body,html,p{
   }
   .amount{
     color: yellow;
-    font-size: 3.5vh;   
+    font-size: 3.2vh;   
   }
   .notimp{
     font-size: 1.8vh;
@@ -40,7 +40,7 @@ body,html,p{
   #number{
     font-weight: 700;
     top:4%;
-    
+    left: 17.5%;
     font-size: 3vh;
   }
   img{
