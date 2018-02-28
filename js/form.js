@@ -123,24 +123,23 @@ function generate () {
         $('#tkt').css("display","block");
         document.getElementById("number").innerHTML=""+childData.tid+"";
         alert("yes");
-        if((childData.shirt).includes("YES")){
-              for(i=0;i<optTee.length;i++){
+        
+        for(i=0;i<optTee.length;i++){
           optTee[i].style.display = "initial";
         }
         optThree.style.display = "initial";
-        }
-        else{
-          for(i=0;i<optTee.length;i++){
-          optTee[i].style.display = "none";
-        }
-        optThree.style.display = "none";
-        }
+        
+        
         }
         else if(Data.match("NO"))
         {
           $('#tkt').css("display","block");
           document.getElementById("number").innerHTML=""+childData.tid+"";
-          alert("no")
+          alert("no");
+          for(i=0;i<optTee.length;i++){
+          optTee[i].style.display = "none";
+        }
+        optThree.style.display = "none";
         }
       }
     })
