@@ -107,6 +107,9 @@ function generate () {
       var childData = childSnapshot.val() // gets all the child data
       if (email == childData.email) {
         var Data=childData.shirt;
+        var type =1;
+         var optThree=  document.getElementById("optThree");
+         var optTee = document.getElementsByClassName("optTee");
         if(Data.match("YES"))
         {
         // $('.name').html('<p>Name:' + childData.name + '</p>')
@@ -120,6 +123,18 @@ function generate () {
         $('#tkt').css("display","block");
         document.getElementById("number").innerHTML=""+childData.tid+"";
         alert("yes");
+        if((childData.shirt).includes("YES")){
+              for(i=0;i<optTee.length;i++){
+          optTee[i].style.display = "initial";
+        }
+        optThree.style.display = "initial";
+        }
+        else{
+          for(i=0;i<optTee.length;i++){
+          optTee[i].style.display = "none";
+        }
+        optThree.style.display = "none";
+        }
         }
         else if(Data.match("NO"))
         {
