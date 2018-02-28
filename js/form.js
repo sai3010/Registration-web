@@ -122,7 +122,7 @@ function generate () {
         // $('.Regby').html('<p>Registered By:' + childData.registered + '</p>')
         $('#tkt').css("display","block");
         document.getElementById("number").innerHTML=""+childData.tid+"";
-        alert("yes");
+        //alert("yes");
         
         for(i=0;i<optTee.length;i++){
           optTee[i].style.display = "initial";
@@ -135,7 +135,7 @@ function generate () {
         {
           $('#tkt').css("display","block");
           document.getElementById("number").innerHTML=""+childData.tid+"";
-          alert("no");
+          //alert("no");
           for(i=0;i<optTee.length;i++){
           optTee[i].style.display = "none";
         }
